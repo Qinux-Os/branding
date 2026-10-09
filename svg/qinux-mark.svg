@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Qinux mark: a Q on a 24-unit grid.
+
+  The ring is stroked, not filled, so the inner and outer radii stay exact and
+  the mark scales cleanly. The tail crosses the ring at the lower right, which
+  is what distinguishes a Q from an O.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+     role="img" aria-label="Qinux">
+  <title>Qinux</title>
+  <g fill="none" stroke="#2C6BED" stroke-width="2" stroke-linecap="round">
+    <!-- Ring: r=7 centred at 11,11 so the tail has room at the lower right. -->
+    <circle cx="11" cy="11" r="7"/>
+    <!-- Tail, from inside the ring to just outside it. -->
+    <path d="M 15.5 15.5 L 20 20"/>
+  </g>
+</svg>

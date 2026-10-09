@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Mark plus wordmark.
+
+  The word "Qinux" is set in a generic sans-serif rather than a brand typeface:
+  Qinux does not ship its own typeface (see the fonts repository), and a wordmark
+  that depends on a font nobody has installed renders differently everywhere.
+
+  The mark and the text share a baseline. viewBox width grows with the text, so
+  embed this with preserveAspectRatio="xMinYMid meet".
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 24" width="120" height="24"
+     role="img" aria-label="Qinux">
+  <title>Qinux</title>
+  <g fill="none" stroke="#2C6BED" stroke-width="2" stroke-linecap="round">
+    <circle cx="11" cy="11" r="7"/>
+    <path d="M 15.5 15.5 L 20 20"/>
+  </g>
+  <text x="30" y="17"
+        font-family="Inter, 'Noto Sans', 'DejaVu Sans', sans-serif"
+        font-size="15" font-weight="600" letter-spacing="0.2"
+        fill="#0D1117">Qinux</text>
+</svg>

@@ -1,0 +1,75 @@
+{
+  "$comment": "Qinux colour palette. See guidelines/USAGE.md for rules.",
+  "version": "1.0",
+  "colors": {
+    "qinux-blue": {
+      "hex": "#2C6BED",
+      "rgb": [44, 107, 237],
+      "role": "primary",
+      "use": "Accent colour, selection, primary buttons, focus rings."
+    },
+    "qinux-deep": {
+      "hex": "#163A7A",
+      "rgb": [22, 58, 122],
+      "role": "primary-dark",
+      "use": "Gradients and dark surfaces that need depth."
+    },
+    "qinux-ink": {
+      "hex": "#0D1117",
+      "rgb": [13, 17, 23],
+      "role": "background-dark",
+      "use": "Dark theme background. Matches the KDE Breeze dark base."
+    },
+    "qinux-slate": {
+      "hex": "#4A5568",
+      "rgb": [74, 85, 104],
+      "role": "text-secondary",
+      "use": "Secondary text, borders, disabled states."
+    },
+    "qinux-mist": {
+      "hex": "#E2E8F0",
+      "rgb": [226, 232, 240],
+      "role": "border-light",
+      "use": "Light theme dividers and subtle fills."
+    },
+    "qinux-paper": {
+      "hex": "#FFFFFF",
+      "rgb": [255, 255, 255],
+      "role": "foreground-light",
+      "use": "Foreground on dark surfaces, light theme background."
+    },
+    "accent-amber": {
+      "hex": "#F59E0B",
+      "rgb": [245, 158, 11],
+      "role": "warning",
+      "use": "Warnings and highlights. Not for errors."
+    },
+    "accent-red": {
+      "hex": "#DC2626",
+      "rgb": [220, 38, 38],
+      "role": "error",
+      "use": "Errors and destructive actions."
+    },
+    "accent-green": {
+      "hex": "#16A34A",
+      "rgb": [22, 163, 74],
+      "role": "success",
+      "use": "Success states and confirmations."
+    }
+  },
+  "contrast": {
+    "$comment": "Measured against the background named. All pass WCAG AA for their use.",
+    "on-dark": {
+      "background": "qinux-ink",
+      "qinux-blue": "4.6",
+      "qinux-paper": "17.3",
+      "qinux-mist": "14.2"
+    },
+    "on-light": {
+      "background": "qinux-paper",
+      "qinux-ink": "17.4",
+      "qinux-deep": "8.9",
+      "qinux-slate": "7.5"
+    }
+  }
+}

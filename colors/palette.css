@@ -1,0 +1,66 @@
+/*
+ * Qinux palette as CSS custom properties.
+ *
+ * Semantic names, not literal colours. Components should reference these rather
+ * than a hex value so that light and dark both work without a second stylesheet.
+ *
+ * Values come from colors/palette.json and must stay in step with it.
+ */
+
+:root {
+  /* Brand */
+  --qinux-blue: #2c6bed;
+  --qinux-deep: #163a7a;
+
+  /* Surfaces */
+  --qinux-ink: #0d1117;
+  --qinux-paper: #ffffff;
+  --qinux-mist: #e2e8f0;
+
+  /* Text */
+  --qinux-slate: #4a5568;
+
+  /* Status */
+  --qinux-amber: #f59e0b;
+  --qinux-red: #dc2626;
+  --qinux-green: #16a34a;
+
+  /* Spacing scale, 4px base */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* Corner radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
+/* Dark theme. Applied by the KDE colour scheme. */
+.qinux-dark {
+  color-scheme: dark;
+
+  --surface-base: var(--qinux-ink);
+  --surface-raised: #161b22;
+  --text-primary: var(--qinux-paper);
+  --text-secondary: var(--qinux-mist);
+  --text-muted: #8b949e;
+  --border-subtle: #30363d;
+  --accent: var(--qinux-blue);
+}
+
+/* Light theme. */
+.qinux-light {
+  color-scheme: light;
+
+  --surface-base: var(--qinux-paper);
+  --surface-raised: var(--qinux-mist);
+  --text-primary: var(--qinux-ink);
+  --text-secondary: var(--qinux-slate);
+  --text-muted: #6b7280;
+  --border-subtle: #d0d7de;
+  --accent: var(--qinux-deep);
+}
